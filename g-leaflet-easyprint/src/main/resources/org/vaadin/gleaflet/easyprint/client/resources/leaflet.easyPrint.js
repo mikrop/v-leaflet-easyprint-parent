@@ -21,5 +21,6 @@ L.Control.EasyPrint = L.Control.extend({
 });
 
 L.easyPrint = function() {
-  return new L.Control.EasyPrint();
+    console.log("create easyPrint...");
+    return new L.Control.EasyPrint();
 };

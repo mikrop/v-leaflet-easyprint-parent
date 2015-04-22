@@ -13,7 +13,7 @@ public class EasyPrint extends Control {
 	
 	public static native EasyPrint create()
 	/*-{
-		return new $wnd.L.Control.EasyPrint();
+		return new $wnd.L.easyPrint();
 	}-*/;
 
 }
