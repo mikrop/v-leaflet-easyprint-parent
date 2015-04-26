@@ -1,15 +1,15 @@
 
-L.Control.EasyPrint = L.Control.extend({
+L.EasyPrint = L.Control.extend({
     options: {
         position: 'topleft',
         title: 'Print map'
     },
 
-    onAdd: function () {
+    onAdd: function (map) {
         var container = L.DomUtil.create('div', 'leaflet-control-easyPrint leaflet-bar leaflet-control');
 
         this.link = L.DomUtil.create('a', 'leaflet-control-easyPrint-button leaflet-bar-part', container);
-        this.link.href = 'javascript:void(0)($("#map").print({stylesheet:"easyPrint.css"}))';
+        this.link.href = 'javascript:void(0)($(document.body).print({stylesheet:"easyPrint.css"}))';
 
         return container;
     },
@@ -21,6 +21,5 @@ L.Control.EasyPrint = L.Control.extend({
 });
 
 L.easyPrint = function() {
-    console.log("create easyPrint...");
-    return new L.Control.EasyPrint();
+    return new L.EasyPrint();
 };

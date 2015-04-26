@@ -1,19 +1,19 @@
 package org.vaadin.gleaflet.easyprint.client;
 
 import org.peimari.gleaflet.client.control.Control;
-import org.vaadin.gleaflet.easyprint.client.resources.LeafletPrintResourceInjector;
+import org.vaadin.gleaflet.easyprint.client.resources.LeafletEasyPrintResourceInjector;
 
 public class EasyPrint extends Control {
 
 	static {
-        LeafletPrintResourceInjector.ensureInjected();
+        LeafletEasyPrintResourceInjector.ensureInjected();
 	}
 
 	protected EasyPrint() {}
 	
 	public static native EasyPrint create()
 	/*-{
-		return new $wnd.L.easyPrint();
+        return new $wnd.L.easyPrint();
 	}-*/;
 
 }
