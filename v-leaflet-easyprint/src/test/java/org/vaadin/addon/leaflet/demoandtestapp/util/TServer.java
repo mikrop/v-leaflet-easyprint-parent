@@ -137,7 +137,7 @@ public class TServer {
         servletHolder.setInitParameter("widgetset",
                 "org.vaadin.addon.leaflet.demoandtestapp.TestWidgetset");
 
-        File file = new File("x:/INTERNAL/v-leaflet-easyprint-parent/v-leaflet-easyprint/target/testwebapp");
+        File file = new File("x:/tmp/v-leaflet-easyprint-parent/v-leaflet-easyprint/target/testwebapp");
         context.setWar(file.getPath());
         context.setContextPath("/");
 
