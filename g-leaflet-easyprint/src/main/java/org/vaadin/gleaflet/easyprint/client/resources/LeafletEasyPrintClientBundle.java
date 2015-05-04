@@ -3,6 +3,7 @@ package org.vaadin.gleaflet.easyprint.client.resources;
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.CssResource;
 import com.google.gwt.resources.client.DataResource.DoNotEmbed;
+import com.google.gwt.resources.client.ImageResource;
 import com.google.gwt.resources.client.TextResource;
 
 public interface LeafletEasyPrintClientBundle extends ClientBundle {
@@ -20,5 +21,8 @@ public interface LeafletEasyPrintClientBundle extends ClientBundle {
     @Source("easyPrint.css")
     @CssResource.NotStrict
     CssResource css();
+
+    @Source("print.png")
+    ImageResource print();
 
 }

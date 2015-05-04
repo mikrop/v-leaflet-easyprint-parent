@@ -1,8 +1,15 @@
 
-.leaflet-control-easyPrint a {
-  background: #fff url("https://github.com/rowanwins/leaflet-easyPrint/blob/gh-pages/dist/print.png") no-repeat 5px;
-  background-size: 16px 16px;
-  display: block;
+.leaflet-control-easyPrint {
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    background: #fff;
+    border-radius: 5px;
+}
+
+@sprite .leaflet-control-easyPrint a {
+    gwt-image: "print";
+    background-position: center;
+    width: 26px;
+    height: 26px;
 }
 
 @media print {
