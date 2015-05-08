@@ -8,6 +8,13 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <scm>
+        <url>git://github.com/mikrop/v-leaflet-easyprint-parent.git</url>
+        <connection>scm:git:git://github.com/mikrop/v-leaflet-easyprint-parent.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:/mikrop/v-leaflet-easyprint-parent.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
     <name>EasyPrint Leaflet plugin wrappers for Java (Vaadin) and GWT, parent POM for loosely coupled projects</name>
 
     <licenses>
