@@ -7,8 +7,8 @@
     <packaging>pom</packaging>
 
     <scm>
-        <url>https://github.com/mikrop/v-leaflet-easyprint-parent.git</url>
-        <connection>scm:git:git://github.com/mikrop/v-leaflet-easyprint-parent.git</connection>
+        <url>git@github.com:mikrop/v-leaflet-easyprint-parent.git</url>
+        <connection>scm:git:git@github.com:mikrop/v-leaflet-easyprint-parent.git</connection>
         <developerConnection>scm:git:git@github.com:mikrop/v-leaflet-easyprint-parent.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
