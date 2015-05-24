@@ -12,4 +12,13 @@ During development you might need to have development version of v-leaflet, g-le
 
 ### The core slippy map library: [LeafletJS](http://leafletjs.com)
 
+### Manually running test server and test apps during development
+
+The TServer class has a main method that you can launch. It opens an embedded jetty to port 9998. The main view lists all tests and clicking one opens it in a new window. The easiest method is usually running that from you IDE (e.g. open the class and then hit CTRL/CMD-F11 in Eclipse). 
+
+From command line one can launch it with easily with correct classpath with maven exec plugin:
+```
+mvn -e exec:java -Dexec.mainClass="org.vaadin.addon.leaflet.demoandtestapp.util.UiRunner" -Dexec.classpathScope=test
+```
+
 
