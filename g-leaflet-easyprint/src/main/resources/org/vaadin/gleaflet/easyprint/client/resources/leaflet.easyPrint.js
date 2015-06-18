@@ -9,7 +9,7 @@ L.EasyPrint = L.Control.extend({
         var container = L.DomUtil.create('div', 'leaflet-control-easyPrint leaflet-bar leaflet-control');
 
         this.link = L.DomUtil.create('a', 'leaflet-control-easyPrint-button leaflet-bar-part', container);
-        this.link.href = 'javascript:void(0)($(document.body).print({stylesheet:"easyPrint.css"}))';
+        this.link.href = 'javascript:void(0)($("' + this.options.id + '").print({stylesheet:"easyPrint.css"}))';
 
         return container;
     },

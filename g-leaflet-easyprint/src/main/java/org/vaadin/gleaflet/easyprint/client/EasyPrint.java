@@ -10,10 +10,10 @@ public class EasyPrint extends Control {
 	}
 
 	protected EasyPrint() {}
-	
-	public static native EasyPrint create()
+
+    public static native EasyPrint create(EasyPrintOptions options)
 	/*-{
-        return new $wnd.L.easyPrint();
-	}-*/;
+        return new $wnd.L.EasyPrint(options);
+    }-*/;
 
 }

@@ -1,6 +1,8 @@
 package org.vaadin.addon.leaflet.demoandtestapp;
 
 import com.vaadin.ui.Component;
+import com.vaadin.ui.HorizontalSplitPanel;
+import com.vaadin.ui.Label;
 import org.vaadin.addon.leaflet.LMap;
 import org.vaadin.addon.leaflet.LOpenStreetMapLayer;
 import org.vaadin.addon.leaflet.easyprint.LEasyPrint;
@@ -22,13 +24,17 @@ public class EasyPrintTest extends AbstractTest {
         leafletMap.setCenter(60.4525, 22.301);
         leafletMap.setZoomLevel(15);
         leafletMap.addBaseLayer(new LOpenStreetMapLayer(), "OSM");
+        leafletMap.setId("map");
 
         LEasyPrint easyPrint = new LEasyPrint();
         easyPrint.setPosition(ControlPosition.topleft);
-        // easyPrint.setEnabled(false);
+//        easyPrint.setEnabled(false);
         leafletMap.addControl(easyPrint);
 
-        return leafletMap;
+        HorizontalSplitPanel splitPanel = new HorizontalSplitPanel();
+        splitPanel.setFirstComponent(leafletMap);
+        splitPanel.setSecondComponent(new Label("Second Component"));
+        return splitPanel;
     }
 
     @Override
