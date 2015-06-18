@@ -11,6 +11,8 @@ import org.vaadin.addonhelpers.AbstractTest;
 
 public class EasyPrintTest extends AbstractTest {
 
+    private static final String MAP_ID = "map";
+
     @Override
     public String getDescription() {
         return "Test easyprint control";
@@ -24,10 +26,11 @@ public class EasyPrintTest extends AbstractTest {
         leafletMap.setCenter(60.4525, 22.301);
         leafletMap.setZoomLevel(15);
         leafletMap.addBaseLayer(new LOpenStreetMapLayer(), "OSM");
-        leafletMap.setId("map");
+        leafletMap.setId(MAP_ID);
 
         LEasyPrint easyPrint = new LEasyPrint();
         easyPrint.setPosition(ControlPosition.topleft);
+        easyPrint.setId(leafletMap.getId());
 //        easyPrint.setEnabled(false);
         leafletMap.addControl(easyPrint);
 
