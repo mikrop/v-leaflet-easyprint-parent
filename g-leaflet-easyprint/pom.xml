@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.vaadin.addons</groupId>
 	<artifactId>g-leaflet-easyprint</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.2.1-SNAPSHOT</version>
 	<name>g-leaflet-easyprint</name>
 
 	<dependencies>
