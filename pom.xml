@@ -29,6 +29,7 @@
     <modules>
         <module>g-leaflet-easyprint</module>
         <module>v-leaflet-easyprint</module>
+        <module>springboot-easyprint</module>
     </modules>
 
 </project>
