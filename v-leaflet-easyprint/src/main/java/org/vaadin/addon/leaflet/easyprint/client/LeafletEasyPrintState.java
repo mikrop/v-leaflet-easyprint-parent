@@ -1,6 +1,6 @@
 package org.vaadin.addon.leaflet.easyprint.client;
 
-import org.vaadin.addon.leaflet.client.LeafletControlState;
+import org.vaadin.addon.leaflet.shared.LeafletControlState;
 
 public class LeafletEasyPrintState extends LeafletControlState {
 
