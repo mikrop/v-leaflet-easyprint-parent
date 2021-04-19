@@ -8,7 +8,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <vaadin.version>7.7.6</vaadin.version>
+        <vaadin.version>8.12.4</vaadin.version>
         <v-leaflet-version>1.0.3</v-leaflet-version>
         <g-leaflet-easyprint-version>1.1.2-SNAPSHOT</g-leaflet-easyprint-version>
     </properties>
